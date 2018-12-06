@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
-    var RealScore = 0
+    var realScore = 0
     var braScore = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,39 +17,39 @@ class MainActivity : AppCompatActivity() {
         BarcelonaGoal.setOnClickListener {
             BarcaTeam()
         }
-        RealGoal.setOnClickListener {
+        realGoal.setOnClickListener {
             RealmadridTeam()
         }
-        ResetButton.setOnClickListener {
+        resetButton.setOnClickListener {
             resetmatch()
         }
-        Finishbutton.setOnClickListener {
+        finishbutton.setOnClickListener {
             finishmatch()
         }
     }
 
     fun RealmadridTeam() {
-        RealScore++
-        TextGoalReal.text = RealScore.toString()
+        realScore++
+        textGoalReal.text = realScore.toString()
     }
 
     fun BarcaTeam() {
         braScore++
-        TextGoalbarca.text = braScore.toString()
+        textGoalbarca.text = braScore.toString()
     }
 
     fun resetmatch() {
-        RealScore = 0
+        realScore = 0
         braScore = 0
-        TextGoalReal.text = RealScore.toString()
-        TextGoalbarca.text = braScore.toString()
+        textGoalReal.text = realScore.toString()
+        textGoalbarca.text = braScore.toString()
     }
 
     fun finishmatch() {
         val finalscore: String
-        if (braScore > RealScore) {
+        if (braScore > realScore) {
             finalscore = "Barcelona Win!"
-        } else if (RealScore > braScore) {
+        } else if (realScore > braScore) {
             finalscore = "Realmadrid Win!"
         } else {
             finalscore = "Draw!"
