@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">firstSelfAPPfootball</string>
+    <string name="RealGoal">goal</string>
+    <string name="BracelonaGoal">goal</string>
+    <string name="TextGoalReal"/>
+    <string name="TextGoalBarca">TextView</string>
+    <string name="TextBarcagoal"/>
+    <string name="Ball">IamgeBall</string>
+    <string name="ResetButton">Reset</string>
+    <string name="FinishButton">Finish</string>
+    <string name="realmadrid">Realmadrid</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="imageball">imageball</string>
+</resources>
